@@ -10,6 +10,8 @@ LABEL org.opencontainers.image.authors="oss@netflix.com"
 
 SHELL ["/bin/bash", "-o", "pipefail", "-o", "errexit", "-c"]
 
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    g++ build-essential
 # Get and set up Node for front-end asset building
 RUN apt-get update && apt-get install -y --no-install-recommends \
   # Needed for fetching stuff
