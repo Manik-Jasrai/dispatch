@@ -114,9 +114,6 @@ dev = [
     "ruff",
     "typing-extensions==4.13.2",
 ]
-netflix = [
-    "dispatch-internal-plugins",
-]
 
 [project.scripts]
 dispatch = "dispatch.cli:entrypoint"
